@@ -41,91 +41,9 @@
 </head>
 
 <body class="body-single">
-    <div id="fb-root"></div>
-    <script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=118274511611887&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <div id="printTitle" class="hidden">Project name: ________________________</div>
     <header id="header" class="flexcontainer">
         <div id="title" class="hide-for-print">
             <h1>UX Project Checklist</h1>
-        </div>
-        <div id="gdrivebox" class="hide-for-print flexgrow">
-            <span id="signin-do">
-                    <button id="signin"><i class="fa fa-sign-in"></i>Sign in with Google</button> to sync across devices.
-                    <a href="#signin-info" class="open-popup-link"></a>
-                </span>
-            <span id="signin-failed">Sign in failed! :(</span>
-            <span id="signin-success">You're signed in with Google.</span>
-            <div id="signin-info" class="white-popup mfp-hide">
-                <p>We use Google Drive to create and save a file on your account so you will be able to open the same checklist on all your connected devices.
-                </p>
-                <p>
-                    And guess what?! You can share it! </br>
-                    Well, yeah is not a big deal, but it come for free, yes like everything else, what I mean is that we didn't had to do anything for that, right? So basically you connect with Google, we create the file, you go to your Google Drive folder, try to find the new file, I have no idea where it is or what the name will be, the <a href="https://twitter.com/alefranz" target="_blank">guy</a> who did this didn't tell us, once you've found the file share it with your friends. Done! </br>
-                    When your friends connect their Google account they should see the same checklist status. </br>
-                    Magic isn't it? No! That's technology fool!
-                </p>
-                <p>Also, we will not use any of your data, we didn't have any kind of database or save something somewhere in any way, the file we create is yours and yours only and is the only thing we are able to do right now.
-                </p>
-                <p>
-                    Oh, and just want to remind you that if you still not believe it, everything is open source and you can check the github repo <a href="https://github.com/uxchecklist/uxchecklist.github.io" target="_blank">here</a> (feel free to fork it and do awesome things, or help us make it better).
-                </p>
-            </div>
-        </div>
-        <div id="sharebox" class="hide-for-print">
-            <ul>
-                <li>
-                    <!-- facebook plugin -->
-                    <div class="fb-like" data-href="http://uxchecklist.github.io/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                </li>
-                <li>
-                    <!-- linkedin plugin -->
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                    lang: en_US
-                    </script>
-                    <script type="IN/Share" data-counter="right"></script>
-                </li>
-                <li>
-                    <!-- twitter plugin -->
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="UX Project Checklist: The UX Design Process From A to Z" data-via="sovesove" data-hashtags="ux,uxchecklist">Tweet</a>
-                    <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + '://platform.twitter.com/widgets.js';
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, 'script', 'twitter-wjs');
-                    </script>
-                </li>
-            </ul>
-        </div>
-        <div class="support-us-wrapper hide-for-print">
-            <!-- PayPal donate button -->
-            <div class="wrapper-paypal-button hide-for-print">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="CZJKKFXRARWJL">
-                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!"> <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                </form>
-            </div>
-            <!-- PayPal donate button END -->
-            <!-- Patreon -->
-            <div class="wrapper-patreon-button hide-for-print not-released">
-                <iframe src="/widgets/patreon.html" frameborder="0" height="auto" scrolling="no" width="100%"></iframe>
-            </div>
-            <!-- Patreon END -->
         </div>
     </header>
     <form id="checklist-form" method="POST">
@@ -528,63 +446,6 @@
         </div>
     </form>
     <footer id="footer" class="flexcontainer hide-for-print">
-
-        <div class="footerColumn">
-            <h3>About</h3>
-            <h4 id="credits">Created by</h4>
-            <a id="sovesove" class="twitterCard" href="https://twitter.com/sovesove" target="_blank"><img src="https://avatars.io/twitter/sovesove" alt=""><p>@sovesove</p></a></br>
-            <h4 id="inspiredby" class="hide-for-print clearfix">Friends</h4>
-            <a id="alefranz" class="twitterCard" href="https://twitter.com/alefranz" target="_blank"><img src="https://avatars.io/twitter/alefranz" alt=""><p>@alefranz</p></a></br>
-            <a id="uxstore" class="twitterCard" href="https://www.uxstore.com" target="_blank"><img src="/img/uxstore.png" alt="www.uxstore.com"></a></br>
-            <a id="friendsPopup" href="#friends" class="open-popup-link">Other credits</a></br>
-
-            <div id="friends" class="white-popup mfp-hide">
-                <p>
-                    Inspired by&nbsp;<a href="http://webdesignerschecklist.com/" target="_blank">this</a>,&nbsp;<a href="https://stayintech.com/info/UX" target="_blank">this</a>&nbsp;and&nbsp;<a href="http://ixdchecklist.com/" target="_blank">this</a>
-                </p>
-                <p>
-                    Also thanks to:</br>
-                    <a href="http://www.manuelalangella.com/" target="_blank">Manuela</a> for the superb illustrated icons.</br>
-                    <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> for this responsive modal popup.</br>
-                    <a href="http://garlicjs.org/" target="_blank">GarlicJs</a> for the garlic, which everyone knows helps you save digital things locally in your browser.</br>
-                    <a href="http://fntneves.github.io/jquery-labelauty/" target="_blank">Labelauty</a> for the checkbox beautifier.</br>
-                    <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> for the iconic font.</br>
-                </p>
-            </div>
-        </div>
-
-        <div class="footerColumn footerToolbar">
-            <h3>Tools</h3>
-            <div id="toolbar" class="hide-for-print">
-                <button id="print" type="button"><i class="fa fa-print"></i>Print</button>
-                <button id="reset" class="resetBtn"><i class="fa fa-refresh"></i>Reset</button>
-                <a id="github" class="button" href="https://github.com/uxchecklist/uxchecklist.github.io" target="_blank"><i class="fa fa-github"></i>Fork</a>
-            </div>
-
-            <div class="hide-for-print clearfix">
-                <a id="typeformLink" class="typeform-share button" href="https://sovesove.typeform.com/to/Ok2qWy" data-mode="1" target="_blank"><i class="fa fa-comment-o"></i>Tell us what you think!</a>
-                <script>
-                (function() {
-                    var qs, js, q, s, d = document,
-                        gi = d.getElementById,
-                        ce = d.createElement,
-                        gt = d.getElementsByTagName,
-                        id = 'typef_orm',
-                        b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-                    if (!gi.call(d, id)) {
-                        js = ce.call(d, 'script');
-                        js.id = id;
-                        js.src = b + 'share.js';
-                        q = gt.call(d, 'script')[0];
-                        q.parentNode.insertBefore(js, q)
-                    }
-                    id = id + '_';
-                    /*if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}*/
-                })()
-                </script>
-            </div>
-
-        </div>
 
         
     </footer>
